@@ -1,0 +1,487 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    background-color: #1f221e;
+    padding: 3rem 0rem;
+    .container {
+        display: block;
+        width: 1024px;
+        justify-content: space-between;
+
+
+        .titleSpan{
+            font-style: italic;
+            opacity: .4;
+            font-weight: 300;
+        }
+
+        .heroTitle {
+            display: block;
+
+            h1 {
+                font-weight: 800;
+                font-size: 70px;
+            }
+        }
+        .heroBody {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6rem;
+            .heroBodyLeft {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+            
+                .bodyLeftTitle {
+                    font-weight: 800;
+                    font-size: 60px;
+                }
+                .bodyLeftMiddle {
+                    display: flex;
+                    gap: 2rem;
+
+                    img{
+                        object-fit: cover;
+                        width: 250px;
+                        border-radius: 40% 40% 0rem 0rem;
+                    }
+
+                    .middleDes{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4rem;
+                        justify-content: center;
+                        text-transform: uppercase;
+                        h3{
+                            font-weight: 600;
+                        }
+
+                        .desctSpan{
+                            font-weight: 300;
+                            opacity: 0.4;
+                            font-style: italic;
+                        }
+                    }
+
+                }
+
+                 .bodyLeftFooter{
+                        p{
+                            display: block;
+                            width: 600px;
+                            opacity: .4;
+                            line-height: 1.4rem;
+                        }
+                    }
+            }
+
+            .heroBodyRight{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+
+                    img{
+                    width: 350px;
+                }
+
+                .rightdesc{
+                    text-transform: uppercase;
+                    padding: 1rem 0rem;
+                    width: 100%;
+                    display: flex;
+                   justify-content: space-between;
+                   h3:last-child{
+                    opacity: 0.4;
+                }
+                }
+            
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:600px){
+
+    .hero {
+      max-width: 600px;
+        .container {
+           width: 100%;
+           display: block;
+           padding: 0rem 1rem;
+    
+            .titleSpan{
+              
+            }
+    
+            .heroTitle {
+             
+    
+                h1 {
+                    font-size: 25px; 
+                }
+            }
+            .heroBody {
+
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+               
+                .heroBodyLeft {
+                    
+                
+                    .bodyLeftTitle {
+                        font-size: 35px;
+                    }
+                    .bodyLeftMiddle {
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       align-items: center;
+                       gap: 2rem;
+    
+                        img{
+                         
+                        }
+    
+                        .middleDes{
+                            gap: 2rem;
+                            width: 100%;
+                            align-items: center;
+                          
+                            h3{
+                              text-align: center;
+                            }
+    
+                            .desctSpan{
+                               
+                            }
+                        }
+    
+                    }
+    
+                     .bodyLeftFooter{
+                            p{
+                               width: auto;
+                               text-align: center;
+                            }
+                        }
+                }
+    
+                .heroBodyRight{
+                  
+    
+    
+                        img{
+                            max-width: 300px;
+                            border-radius: 20px;
+                    }
+    
+                    .rightdesc{
+
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    
+                       h3:last-child{
+                       text-align: right;
+                    }
+                    }
+                
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (min-width:481px) and (max-width:767px){
+    .hero {
+        max-width: 767px;
+          .container {
+             width: 100%;
+             display: block;
+             padding: 0rem 1rem;
+
+      
+              .heroTitle {
+               
+      
+                  h1 {
+                      font-size: 45px; 
+                  }
+              }
+              .heroBody {
+  
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3rem;                 
+                  .heroBodyLeft {
+                      
+                  
+                      .bodyLeftTitle {
+                          font-size: 35px;
+                      }
+                      .bodyLeftMiddle {
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: center;
+                         gap: 2rem;
+      
+                          img{
+                           
+                          }
+      
+                          .middleDes{
+                              gap: 2rem;
+                              width: 100%;
+                              align-items: center;
+                            
+                              h3{
+                                text-align: center;
+                              }
+      
+                              .desctSpan{
+                                 
+                              }
+                          }
+      
+                      }
+      
+                       .bodyLeftFooter{
+                              p{
+                                 width: auto;
+                                 text-align: center;
+                              }
+                          }
+                  }
+      
+                  .heroBodyRight{
+                   
+                   
+      
+                          img{
+                              max-width: 300px;
+                              border-radius: 20px;
+                      }
+      
+                      .rightdesc{
+  
+                          display: flex;
+                          flex-direction: column;
+                          gap: 10px;
+                      
+                         h3:last-child{
+                         text-align: right;
+                      }
+                      }
+                  
+                  }
+              }
+          }
+      }
+
+
+}
+
+
+
+
+
+
+
+
+@media (min-width:768px) and (max-width:1024px){
+    .hero {
+        max-width: 1024px;
+          .container {
+             width: 100%;
+             display: block;
+             padding: 0rem 1rem;
+
+      
+              .heroTitle {
+               
+      
+                  h1 {
+                      font-size: 55px; 
+                  }
+              }
+              .heroBody {
+  
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 3rem;                 
+                  .heroBodyLeft {
+                      
+                  
+                      .bodyLeftTitle {
+                          font-size: 35px;
+                      }
+                      .bodyLeftMiddle {
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: center;
+                         gap: 2rem;
+      
+                          img{
+                           
+                          }
+      
+                          .middleDes{
+                              gap: 2rem;
+                              width: 100%;
+                              align-items: center;
+                            
+                              h3{
+                                text-align: center;
+                              }
+      
+                              .desctSpan{
+                                 
+                              }
+                          }
+      
+                      }
+      
+                       .bodyLeftFooter{
+                              p{
+                                 width: auto;
+                                 text-align: center;
+                              }
+                          }
+                  }
+      
+                  .heroBodyRight{
+                   
+                    padding-right: 2rem;
+      
+                          img{
+                              max-width: 300px;
+                              border-radius: 20px;
+                      }
+      
+                      .rightdesc{
+  
+                          display: flex;
+                          flex-direction: column;
+                          gap: 10px;
+                      
+                         h3:last-child{
+                         text-align: right;
+                      }
+                      }
+                  
+                  }
+              }
+          }
+      }
+  
+    
+}
+
+
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+
+    .hero {
+        max-width: 1024px;
+          .container {
+             width: 100%;
+             display: block;
+             padding: 0rem 1rem;
+
+      
+              .heroTitle {
+               
+      
+                  h1 {
+                      font-size: 55px; 
+                  }
+              }
+              .heroBody {
+  
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 3rem;                 
+                  .heroBodyLeft {
+                      
+                  
+                      .bodyLeftTitle {
+                          font-size: 35px;
+                      }
+                      .bodyLeftMiddle {
+                         display: flex;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: center;
+                         gap: 2rem;
+      
+                          
+      
+                          .middleDes{
+                              gap: 2rem;
+                              width: 100%;
+                              align-items: center;
+                            
+                              h3{
+                                text-align: center;
+                              }
+      
+                          }
+      
+                      }
+      
+                       .bodyLeftFooter{
+                              p{
+                                 width: auto;
+                                 text-align: center;
+                              }
+                          }
+                  }
+      
+                  .heroBodyRight{
+                   
+                    padding-right: 2rem;
+      
+                          img{
+                              max-width: 300px;
+                              border-radius: 20px;
+                      }
+      
+                      .rightdesc{
+  
+                          display: flex;
+                          flex-direction: column;
+                          gap: 10px;
+                      
+                         h3:last-child{
+                         text-align: right;
+                      }
+                      }
+                  
+                  }
+              }
+          }
+      }
+  
+
+
+
+    
+   
+}

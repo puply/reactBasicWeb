@@ -1,0 +1,132 @@
+$fontopen : 'Open Sans', sans-serif;
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    background-color: #1F221E;
+    font-family: $fontopen;
+    .container {
+        display: flex;
+        width: 1024px;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            padding: 2rem;
+            letter-spacing: 3px;
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        .links {
+            display: flex;
+            column-gap: 2rem;
+
+           
+                .link {
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    &:hover {
+                        color: rgb(148, 148, 148);
+                    }
+                }
+            
+        }
+        .nav-res-btn {
+            padding: 2px;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: brown;
+            display: none;
+            font-size: 1.8rem;
+        }
+
+        .nav-btns{
+            padding: 2rem;
+            .nav-btn {
+            padding: 10px 35px;
+            text-transform: uppercase;
+            font-size: 18px;
+            background-color:transparent;
+            color: rgb(184, 161, 18);
+            border: 1px solid grey;
+            outline: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: $fontopen;
+            transition: .5s all ease;
+            &:hover {
+                color: rgb(148, 148, 148);
+                background-color: black;
+            }
+        }
+    }
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1024px)  {
+    .navbar {
+        .container {
+
+                display: flex;
+                justify-content: space-around;
+            .links {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 50%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding-top: 5rem;
+                padding-bottom: 20rem;
+                gap: 2rem;
+                background-color: #3d3d3d;
+                transition: 0.9s;
+                transform: translateX(100%);
+                z-index: 999;
+            
+            &:nth-child(odd){
+             background-color: red !important;
+            }
+            }
+
+            
+
+            .nav-close-btn{
+                position: absolute;
+                top: 2rem;
+                right: 2rem;
+            }
+            .nav-res-btn {
+                display: block;
+            }
+
+            .nav-btns{
+                display: none;
+            }
+
+            .responsive{
+                transform: none;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+

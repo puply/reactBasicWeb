@@ -1,0 +1,60 @@
+.catCard {
+    width: 100%;
+    height: 500px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: relative;
+    opacity: .6;
+    transition: .7s all ease;
+
+    &:hover{
+      opacity: 1;
+    }
+    cursor: pointer;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  
+    .desc {
+      font-weight: 700;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+  
+    .title {
+      position: absolute;
+      top: 40px;
+      left: 15px;
+      font-size:24px;
+      font-weight: 700;
+    }
+  }
+
+
+  @media screen and (max-width:1024px){
+
+   .catCard{
+    opacity: 1;
+    color: black;
+
+    .desc{
+      top :15px;
+      left: 45px;
+    }
+
+    .title{
+      left: 45px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  
+   }
+
+}
